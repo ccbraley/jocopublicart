@@ -1,0 +1,215 @@
+body {
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container CSS */
+
+.wrapper {
+    position: relative;
+    margin: 1.5em 0 calc(7em + 2.4vw) 0;
+}
+
+.cityBar {
+    background-color: rgb(170, 176, 187, 0.1);
+    display: flex;
+    justify-content: flex-end;
+    height: 2em;
+    width: 95%;
+    margin: 0 auto; 
+}
+
+.cityBar > a {
+    color: #212121;
+    font-weight: lighter;
+    opacity: 1;
+    padding: 0 0.5em;
+    margin: 0 1em;
+    align-self: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+a.selectedFilter{
+    font-weight: normal;
+    color: black;
+}
+
+#artWindow{
+    width: 20%;
+    height: 75vh;
+    position: absolute;
+    margin-left: 2.5%;
+    top: 2em;
+    z-index: 2;
+    background-color: white;
+}
+
+.artImage {
+    width: 100%;
+    align-self: center;
+    position: relative;
+}
+
+#sectionTitle {
+    font-size: 22px;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 0.04em;
+    padding: 9px 0 9px 17px;
+    background-color: rgb(170, 176, 187, 0.1);
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    align-items: center;
+}
+
+#sectionArtist {
+    font-size: 18px;
+    margin-top: 9px;
+    color: #212121;
+    margin-left: 17px;
+    font-weight: lighter;
+}
+
+#sectionLocation, #sectionAddress, #sectionCity {
+    font-size: 18px;
+    margin: 0 auto;
+    color: #212121;
+}
+
+.sectionHeader {
+    font-size: 22px;
+    margin-top: 9px;
+    font-family: 'Oswald', sans-serif;
+    margin-left: 17px;
+}
+
+.address {
+    margin-top: 9px;
+    margin-left: 17px;
+}
+
+#sectionArrow {
+    height: 22px;
+}
+
+.hideDisplay {
+    display: none;
+}
+
+.flexDisplay {
+    display: flex;
+    flex-direction: column;
+}
+
+#upDown {
+    display: none;
+}
+
+#myCoolMap {
+    width: 95%;
+    margin: 0 auto;
+    height: 75vh;
+}
+
+.cityFilters{
+    font-size: 1.2em;
+    background-color: rgba(206, 206, 206,0.6)
+}
+
+.cityFilters > input{
+    pointer-events: auto;
+}
+
+@media screen and (max-width: 850px) {
+    #myCoolMap {
+        height: calc(100vh - 8.5em);
+        width: 100%;
+    }
+
+    .wrapper {
+        width: 100%;
+        height: calc(100vh - 6.5em);
+        margin: 0;
+    }
+
+    body {
+        width: 100%;
+        margin: 0;
+        height: 100vh;
+    }
+
+    .cityBar {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .mobileOnly {
+        display: inherit;
+    }
+
+    /* Art Window CSS */
+
+    #artWindow{
+        width: 100%;
+        height: 10vh;
+        position: absolute;
+        top: calc(90vh - 6.5em);
+        z-index: 2;
+        background-color: white;
+        border: none;
+        margin: 0;
+    }
+    
+    .artImage {
+        width: 100%;
+        align-self: center;
+        position: relative;
+        display: none;
+    }
+    
+    #sectionTitle {
+        height: 10vh;
+        width: 100%;
+        padding: 0;
+        display: flex;
+        padding: 0.5em 1em;
+    }
+
+    #title {
+        width: 100%;
+        order: 1;
+    }
+
+    #sectionArrow {
+        order: 2;
+        transform: rotate(90deg)
+    }
+    
+    #sectionArtist {
+        width: 100%;
+        display: none;
+    }
+    
+    #sectionLocation, #sectionAddress, #sectionCity {
+        font-size: 14px;
+        font-weight: normal;
+        width: 100%;
+    }
+
+    .sectionHeader {
+        display: none;
+    }
+
+    .address {
+        display: none;
+    }
+
+    .address > div {
+        width: 100%;
+    }
+
+    footer.footer_display {
+        display: none;
+    }
+
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>AJCJ Public Art Catalog - Gallerys</title>
+   <link rel="stylesheet" href="/css/styles.css">
+   <link rel="stylesheet" href="/css/galleryOne.css">
+   <link href="https://fonts.googleapis.com/css?family=Oswald|Rubik:300,400" rel="stylesheet">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+   <header class="header_display">
+      <div>
+         <a href="/">
+            <img src="/img/padcv2.svg" alt="Arts Council of Johnson County Logo">
+         </a>
+      </div>
+      <ul class="nav_display">
+         <li><a href="/" class="underline">GALLERY</a></li>
+         <li><a href="/map" class="light">MAP</a></li>
+         <li><a href="/recognition" class="light">RECOGNITION</a></li>
+   </ul>
+   </header>
+
+   <div class="galleryOneDisplay">
+      <div>
+         <p id="moveBack"><img src="/img/thisarrowleft.svg" alt="Move Back"></p>
+         <p id="moveForward"><img src="/img/thisarrowright.svg" alt="Move Forward"></p>
+      </div>
+      <section>
+         <div id="backgroundTitle"></div>
+         <div id="sectionTitle" class="underline"><span id="title"></span></div>
+         <div id="sectionArist"><span id="artist"></span></div>
+         <div id="sectionDescription"><span id="description"></span></div>
+         <div class="address underline">
+            <img class="mapMarker" src="/img/mapmarker.svg" alt="Map Marker">
+            <div>
+               <div id="sectionLocation"><span id="location"></span></div>
+               <div id="sectionAddress"><span id="address"></span></div>
+               <div id="sectionCity"><span id="city"></span></div>
+            </div>
+         </div>
+      </section>
+
+      <img id="pieceImg" src="" alt="">
+   </div>
+   <footer class="footer_display">
+      <p>Copyright &copy; <span id="year"></span> Arts Council of Johnson County</p>
+   </footer>
+   <script src="/javascript/galleryOne.js"></script>
+</body>
+</html>

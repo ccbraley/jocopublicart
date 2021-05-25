@@ -1,0 +1,104 @@
+/* Container CSS */
+
+.allImages {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+    padding: 7em 0;
+    justify-content: space-between;
+}
+
+.allImages > div {
+    width: 31%;
+    margin-bottom: 2.4vw;
+    align-self: center;
+    cursor: pointer;
+}
+
+.allImages > div > img {
+    width: 100%;
+    box-shadow: -10px 13px 20px rgba(0, 0, 0, 0.20)
+}
+
+.allImages > div > img:hover {
+    filter: brightness(120%)
+}
+
+@media screen and (max-width: 850px) {
+
+    body {
+        margin: 0;
+    }
+
+    .allImages {
+        flex-direction: column;
+        padding: 2em 0;
+        width: 100%;
+    }
+
+    .allImages > div {
+        width: 100%;
+        margin: 0;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .allImages img {
+        width: 100%;
+    }
+
+    .sectionTitle {
+        font-size: 18px;
+        width: 90%;
+        margin: 0 auto;
+        color: #212121;
+        margin-bottom: 0.2em;
+    }
+
+    .sectionArtist {
+        font-size: 14px;
+        font-weight: lighter;
+        width: 90%;
+        margin: 0 auto;
+        color: #707070;
+        margin-bottom: 0.2em;
+    }
+
+    .sectionLocation, .sectionAddress {
+        font-size: 14px;
+        color: #212121;
+        letter-spacing: 0.01em
+    }
+
+    .sectionCity {
+        font-size: 14px;
+        color: #212121;
+        letter-spacing: 0.01em;
+    }
+
+    .sectionDescription {
+        font-size: 14px;
+        height: 43.2px;
+        overflow: hidden;
+        width: 90%;
+        margin: 0.5em auto 2em;
+        color: #212121
+    }
+
+    .sectionMore {
+        margin-bottom: 20px;
+        font-weight: lighter;
+    }
+    
+    .address {
+        display: flex;
+        width: 90%;
+        margin: 0 auto 0.4em;
+    }
+    
+    img.mapMarker {
+        width: 1em;
+        height: 1em;
+        margin-right: 0.4em;
+    }
+}

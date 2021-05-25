@@ -1,0 +1,91 @@
+body {
+    height: 100vh;
+    margin: 0;
+}
+
+section {
+    position: relative;
+}
+
+.galleryOneDisplay{
+    display: flex;
+    align-items: center;
+    padding: 3.5em 0 calc(7em + 2.4vw) 0;
+}
+
+.galleryOneDisplay > div {
+    flex: 1;
+    text-align: center;
+}
+
+.galleryOneDisplay > div > p > img {
+    cursor: pointer;
+    width: 10%;
+    margin: 0 auto;
+}
+
+.galleryOneDisplay > section {
+    flex: 2;
+}
+
+.galleryOneDisplay > img {
+    flex: 4;
+    max-width: 40%;
+    align-self: center;
+    margin-right: 7.5%;
+    box-shadow: -30px 30px 20px rgba(0, 0, 0, 0.20)
+}
+
+#sectionTitle {
+    font-size: 32px;
+    color: #212121;
+    margin-right: 8rem;
+    padding-bottom: 0.75rem;
+}
+
+#backgroundTitle {
+    font-size: 120px;
+    color: #212121;
+    opacity: 0.03;
+    position: absolute;
+    z-index: -4;
+    margin-left: -0.6em;
+    margin-top: -0.6em;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+#sectionArist {
+    font-size: 14px;
+    font-weight: lighter;
+    margin-right: 8rem;
+    padding: 0.75rem 0 1rem;
+    font-weight: lighter;
+    color: #707070
+}
+
+#sectionDescription {
+    font-size: 14px;
+    letter-spacing: 0.01;
+    margin-bottom: 20px;
+    margin-right: 8rem;
+    color: #212121;
+}
+
+#sectionLocation, #sectionAddress, #sectionCity {
+    font-size: 14px;
+    color: #212121;
+}
+
+.address {
+    display: flex;
+    margin-right: 8rem;
+    padding-bottom: 1rem;
+}
+
+img.mapMarker {
+    width: 1em;
+    height: 1em;
+    margin-right: 0.4em;
+}
+

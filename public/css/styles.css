@@ -1,0 +1,192 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.light {
+    font-weight: lighter;
+}
+
+.underline {
+    border-bottom: solid 1px #212121;
+}
+
+.hamburger {
+    display: none;
+}
+
+/* Header CSS */
+
+.header_display {
+    display: flex;
+    padding: 0 6vw 0 10vw;
+    justify-content: space-between;
+    height: 9.5em;
+    background-color: rgb(170, 176, 187, 0.10);
+}
+
+.header_display > div {
+    align-self: center;
+}
+
+.header_display > div > a {
+    text-decoration: none;
+    color: #000;
+}
+
+.header_display > div > a > img {
+    height: 13vh;
+}
+
+.nav_display {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav_display > li {
+    padding-bottom: 0.25em;
+    height: auto;
+    align-self: center;
+    text-align: center;
+    margin: 0 20px;
+    
+}
+
+.nav_display > li > a {
+    text-decoration: none;
+    color: #212121;
+}
+
+.mobileOnly {
+    display: none;
+}
+
+.desktopOnly {
+    display: inherit;
+}
+
+.nav_mobile {
+    display: none;
+}
+
+/* Footer CSS */
+
+.footer_display {
+    width: 100%;
+    font-size: 0.875rem;
+    background-color: #fff;
+    height: 7em;
+    padding-right: 6vw;
+    background-color: rgb(170, 176, 187, 0.10);
+    border-bottom: solid 2em rgb(170, 176, 187, 0.20);
+    display: grid;
+}
+
+.footer_display > p {
+    text-align: right;
+    color: #000;
+    padding: 0.125rem;
+    margin: 0;
+    align-self: center;
+}
+
+.footer_display > p > a {
+    color: #000;
+    text-decoration: none;
+    border-bottom: solid 1px #212121;
+    padding-bottom: 3px;
+}
+
+
+
+@media screen and (max-width: 850px) {
+
+    .mobileOnly {
+        display: inherit;
+    }
+
+    .desktopOnly {
+        display: none;
+    }
+
+    .hamburger {
+        display: inherit;
+        position: absolute;
+        right: 4vw;
+        top: 4vw;
+        z-index: 3;
+    }
+
+    .hamburger > img {
+        height: 5vw;
+    }
+    
+    /* Header CSS */
+    .nav_display {
+        display: none;
+    }
+
+    .nav_mobile {
+        height: 85vh;
+        width: 75vw;
+        background-color: white;
+        opacity: 0.85;
+        z-index: 1;
+        position: fixed;
+        left: 25vw;
+        top: 0;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav_mobile > a {
+        font-size: 1.5em;
+        margin-bottom: 0.5em;
+    }
+
+    .nav_mobile > a:first-child {
+        margin-top: 7em;
+    }
+
+    .header_display {
+        height: 6.5em;
+        text-align: center;
+        position: relative;
+        background-color: #fff;
+        border: solid 1px rgb(170, 176, 187, 0.80)
+    }
+
+    .header_display > div:first-child {
+        margin: 0 auto;
+    }
+
+    .header_display > div > a > img {
+        width: 50%;
+    }
+
+    /* Footer CSS */
+
+    .footer_display {
+        padding: 0;
+        margin: 0;
+    }
+
+    .footer_display > p {
+        text-align: center;
+    }
+    
+}

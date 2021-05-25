@@ -37,10 +37,10 @@ app.get('/getAll', (request, response) => {
 
   //Set up connection to remote mySQL database
   const con = mysql.createConnection({
-    host: "localhost",
-    user: "artsjoco_wor1",
-    password: "4xHO56g7",
-    database: "artsjoco_public_art"
+    host: "31.220.105.59",
+    user: "carsenra_admin",
+    password: "mycoolpassword",
+    database: "carsenra_jocoarts"
   });
 
   //Query the databse with the query we built above, and return the results to the requester
